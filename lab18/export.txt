@@ -1,0 +1,22 @@
+> SELECT * FROM load_data
+         1 ONE                            01.01.20
+         2 TWO                            02.02.20
+         3 THREE                          03.03.20
+         4 FOUR                           04.04.20
+         5 FIVE                           05.05.20
+         6 SIX                            06.06.20
+         7 SEVEN                          07.07.20
+         8 EIGHT                          08.08.20
+         9 NINE                           09.09.20
+        10 TEN                            10.10.20
+        11 ELEVEN                         11.11.20
+        12 TWELVE                         12.12.20
+        13 THIRTEEN                       13.11.20
+        14 FOURTEEN                       14.10.20
+        15 FIFTEEN                        15.09.20
+        16 SIXTEEN                        16.08.20
+        17 SEVENTEEN                      17.07.20
+        18 EIGHTEEN                       18.06.20
+        19 NINETEEN                       19.05.20
+        20 TWENTY                         20.04.20
+

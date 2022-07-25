@@ -1,0 +1,53 @@
+
+SQL*Loader: Release 12.1.0.2.0 - Production on Wed Dec 11 10:03:25 2019
+
+Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   import.ctl
+Data File:      D:\Database\lab18\import.txt
+  Bad File:     import.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table LOAD_DATA, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+T_NUMBER                            FIRST     *   ,       CHARACTER            
+    SQL string for column : "ROUND(:t_number, 2)"
+T_STR                                NEXT     *   ,       CHARACTER            
+    SQL string for column : "UPPER(:t_str)"
+T_DATE                               NEXT     *   ,       DATE DD.MM.YYYY      
+
+Record 21: Rejected - Error on table LOAD_DATA, column T_NUMBER.
+Column not found before end of logical record (use TRAILING NULLCOLS)
+
+Table LOAD_DATA:
+  20 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  49536 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            21
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Wed Dec 11 10:03:25 2019
+Run ended on Wed Dec 11 10:03:28 2019
+
+Elapsed time was:     00:00:03.59
+CPU time was:         00:00:00.05
